@@ -1,0 +1,255 @@
+@keyframes fadein{
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+ }
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes go-ahead {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+@keyframes down{ 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes down { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+ }
+@-webkit-keyframes down { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes down { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    from {
+        transform: translateX(0px);
+        }
+        to {
+        transform: translateY(5px);
+        }     
+    }
+  
+*{
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+  
+body::-webkit-scrollbar-track {
+    background: #ffffff00;        
+}
+   
+body::-webkit-scrollbar-thumb {    
+    background-color: #343045;    
+    border-radius: 20px;       
+    border: 2px solid #7f75ac;  
+}
+
+.active-techcicle{
+    display: none !important;
+}
+
+nav ul li:hover {
+    background: linear-gradient(to right, #8176AF, #C0B7E8);
+    color: #343045;
+    background-clip: text;
+    -webkit-background-clip: text;  
+    
+    -webkit-text-fill-color: transparent;
+}
+  
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right,#343045, #C0B7E8, #8176AF, #343045);
+    display: block;
+    transition: 0.2s;
+}
+  
+nav ul li:hover::after{
+    width: 100%;
+}
+  
+#contact-btn:hover {
+    background-color: #ffffff29;
+    font-size: 12.3px;
+    transition: .3s ease;
+}
+
+#join-btn:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: .5s ease;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+  
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+  
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* HOME */
+
+.home-text button:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: .5s ease;
+    
+}
+
+.tech-clicle, .tech-bg-cicle{
+    cursor: pointer;
+    animation: down 1s infinite alternate ease-out
+}
+
+.height-minor{
+    margin-top: 200px;
+    transition: all .5s ease;   
+}
+.invert-img-cicle{
+    transform: scaleY(-1);
+    transition: all .5s ease; 
+}
+.image-cicle{
+    transition: all .5s ease; 
+}
+
+/* ABOUT */
+
+.about-description-btn:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: .5s ease;
+}
+
+/* SERVICES */
+
+.services-cards button:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: .5s ease;
+}
+
+/* JOIN HYDRA */
+
+#form-btn:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: 2s ease;
+}
+
+/* FOOTER */
+.footer-menu li:hover, .utilitaries li:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+
+.bxl-facebook-circle:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+.bxl-twitter:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+.bxl-linkedin:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+.bxl-youtube:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+.bxl-instagram:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+.bxl-pinterest:hover{
+    position: relative;
+    bottom: 2px;
+    transition: .1s ease-in-out;
+}
+
+
+#footer-btn:hover {
+    font-size: 12.3px;
+    background: linear-gradient(to right, #7f75ac, #b7aedc);
+    transition: .5s ease;
+}
